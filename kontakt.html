@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt </title>
+    <link href="aktien.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="index.html"> Hauptseite</a>
+            <a href="aktienempfehlung.html"> Aktienempfehlung</a>
+            <a href="aktienbewertung.html"> Aktienbewertung</a>
+            <a href="kontakt.html">Kontakt </a>
+         </div>
+          
+            <button class="openbtn" onclick="openNav()">☰ Menü</button>                    
+       <h1>Kontakt </h1>
+    </header>
+
+    <aside>
+        <h2> Fragen?</h2>
+
+
+        <p>Willkommen bei unserem Kontaktformular für Fragen rund um das Thema Aktien! Wir freuen uns über Ihr Interesse an diesem spannenden Bereich der Finanzwelt und stehen Ihnen gerne zur Verfügung, um Ihre Fragen zu beantworten.
+        <br>
+        <br>
+        Wir verstehen, dass das Investieren in Aktien eine komplexe Angelegenheit sein kann und dass es wichtig ist, fundierte Entscheidungen zu treffen. Daher bieten wir Ihnen die Möglichkeit, uns über dieses Kontaktformular zu kontaktieren und unsere Expertise in Anspruch zu nehmen.
+        
+        <br> <br> Bitte füllen Sie das Kontaktformular unten aus und geben Sie so viele Informationen wie möglich an, um uns bei der Beantwortung Ihrer Fragen zu unterstützen. Wir werden uns so schnell wie möglich bei Ihnen melden und Ihnen qualifizierte Antworten und Lösungen bieten.
+        
+        <br> <br> Wir danken Ihnen für Ihr Vertrauen und freuen uns darauf, Ihnen bei Ihren Anliegen zu Aktien behilflich zu sein!
+
+        <br> <br>
+        
+        Mit freundlichen Grüßen,
+        <br> <br>
+        
+        Das Team von Aebi Leandro       
+        </p>
+    </aside>
+    <main>
+            <h2> Kontaktformular </h2>
+
+            <div>
+                <form action="https://formspree.io/f/xrgwzapg" method="POST"> </form>
+              
+                <label>Anrede *</label><br>
+    
+                <input type="radio" name="anrede" id="frau" value="Frau" required>
+    
+                <label for="frau">Frau</label>
+    
+                <input type="radio" name="anrede" id="herr" value="Herr">
+    
+                <label for="herr">Herr</label>
+    
+                <input type="radio" name="anrede" id="anderes" value="Anderes">
+    
+                <label for="anderes">Anderes</label>
+    
+            </div>
+    
+            <div>
+    
+                <label for="vorname">Vorname *</label><br>
+    
+                <input type="text" id="vorname" name="vorname" minlength="1" maxlength="30" required>
+    
+            </div>
+    
+            <div>
+    
+                <label for="Nachname">Nachname *</label><br>
+    
+                <input type="text" id="Nachname" name="Nachname" minlength="1" maxlength="30" required>
+    
+            </div>
+    
+            
+            <div>
+    
+                <label for="Strasse">Strasse *</label><br>
+    
+                <input type="text" id="Strasse" name="Strasse" minlength="1" maxlength="5" required>
+    
+            </div>
+    
+            
+            <div>
+    
+                <label for="PLZ">PLZ */ Ort * </label> <br>
+                <input type="number" id="PLZ" name="PLZ" required> 
+    
+                <label for="Ort"> </label> 
+                <input type="text" id="Ort"  name="Ort" minlength="1" maxlength="30" required>
+                
+            </div>
+    
+            
+            <div>
+    
+                <label for="Kanton"> Kanton *</label><br>
+    
+                <input type="text" id="Kanton" name="Kanton" minlength="1" maxlength="2" required>
+    
+            </div>
+    
+            
+    
+    
+            <div>
+    
+                <label for="Email">E-Mail *</label><br>
+    
+                <input type="email" id="Email" name="Email" minlength="1" maxlength="30" required>
+    
+            </div>
+    
+    
+            <div>
+    
+                <label for="Kommentar">Fragen *</label><br>
+    
+                <textarea id="Kommentar" name="Kommentar" cols="30" rows="10"></textarea>
+    
+            </div>
+            
+            <br>
+    
+            <input type="submit" value="absenden">
+            <input type="reset" value="löschen">
+        </main>
+    
+    <footer>
+        Bei Fragen zum Thema Aktien können sie uns gerne kontaktieren:
+        <br>
+       
+        <a href="kontakt.html" target="_blank"> Kontakt</a>
+        <br>
+        <br>
+        <a href="mailto:leandro.aebi@gmx.ch"> E-Mail </a>
+        <br>
+        <br>
+        <a href="tel:+41791553182"> 079 155 31 82 </a>
+    
+    </footer>
+    <script>
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+        }
+        </script>
+</body>
+</html>

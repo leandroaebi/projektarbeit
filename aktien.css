@@ -1,0 +1,238 @@
+:root {
+  --lightgreen: #D6D9CE;
+  --middlegreen: #B2B8A3;
+  --olivegreen:#8C9575;
+  --darkgreen: #4C513E;
+}
+ 
+body {
+  display: grid;
+  margin: 2px;
+
+  grid-template-columns: 50% 50%;
+
+      grid-template-areas:
+          "header header"
+          "sidebar content"
+          "footer footer";
+  }
+
+  * {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px; 
+    background-color: var(--lightgreen);
+    text-align: center;
+    hyphens: auto;
+    word-break: keep-all;
+  }
+
+  header, main, aside, footer  {
+    padding: 2%;
+    border: 1px solid black;
+    min-height: 40%; 
+}
+
+header{
+    grid-area: header;
+    background-color: var(--middlegreen);
+    display: flex;
+    flex-direction: row;
+}
+/* Farbe für einen unbesuchten Link */
+a:link {
+  background-color: var(--lightgreen);
+  color: var(--darkgreen);
+}
+
+/* Farbe für Links bei Mauszeiger-Hover */
+a:hover {
+  color: #333333;
+}
+
+/* Farbe für besuchte Links */
+a:visited {
+  color: var(--darkgreen);
+}
+
+/* Farbe für aktive Links */
+a:active {
+  color: green;
+}
+
+div, label {
+  background-color: var(--olivegreen);
+}
+ header h1 {
+  justify-content: center;
+  background-color: var(--middlegreen);
+  font-size: 65px;
+} 
+
+main {
+    grid-area: content;
+    background-color: var(--olivegreen);
+    padding: 10%;
+    text-align: justify;
+} 
+
+main h2, p {
+  background-color: var(--olivegreen);
+  color: var(--darkgreen);
+  font-size: 23px;
+}
+
+aside {
+    grid-area: sidebar;
+    justify-content: space-around;
+    background-color: var(--olivegreen);
+    text-align: justify;
+    padding: 10%;
+}
+
+aside h2  {
+  background-color: var(--olivegreen);
+  color: var(--darkgreen);
+  font-size: 23px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: var(--middlegreen);
+}
+
+footer a {
+  background-color: var(--middlegreen);
+}
+
+footer a:link {
+  background-color: var(--middlegreen);
+}
+
+div#mySidebar.sidebar {
+  background-color: var(--lightgreen);
+}
+
+p {
+  padding: 10%;
+  text-align: justify;
+  background-color: var(--olivegreen);
+  hyphens: auto;
+  word-break:keep-all;
+}
+
+main h4 {
+  color: #880000;
+  background-color: var(--lightgreen);
+  font-size: 23px;
+}
+
+iframe {
+    max-width: 100%;
+    min-height: auto;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    background-color: var(--olivegreen);
+}
+
+.box {
+  background-color: var(--lightgreen);
+  padding: 2%;
+  border: 1px solid black;
+  width: fit-content;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: var(--olivegreen);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: var(--olivegreen);
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: var(--middlegreen);
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 41px;
+  margin-left: 55px;
+}
+
+a.closebtn {
+  background-color: var(--middleblue);
+}
+
+.openbtn {
+  font-size: 30px;
+  cursor: pointer;
+  background-color: var(--olivegreen);
+  color: var(--darkgreen);
+  border: none;
+}
+
+button.openbtn {
+  background-color: var(--middlegreen);
+  text-align: left;
+  
+}
+
+.openbtn:hover {
+  background-color: var(--lightgreen);
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+
+  body{
+  grid-template-columns: 100%;
+  grid-template-areas: 
+      "header"
+      "sidebar" 
+      "content"
+      "footer";
+  }
+
+  footer {
+      justify-content: space-around;
+      display: flex;
+      flex-direction: column;
+
+  }
+    
+}  
+
+
+
